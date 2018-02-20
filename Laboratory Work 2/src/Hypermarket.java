@@ -1,24 +1,24 @@
 
 public class Hypermarket {
 	static int productsAmount = 0;
-	private String manufacturer = "невідомо";
-	private String name = "Без назви";
+	private String manufacturer = "РЅРµРІС–РґРѕРјРѕ";
+	private String name = "Р±РµР· РЅР°Р·РІРё";
 	private double price;
 	private int amount = 0;
 	private int itemsAmount;
 	private String type;
 
 	public String toString() {
-		return "Назва товару:" + this.getName() + " Виробник:" + this.getManufacturer() + " Ціна:" + this.getPrice()
-				+ " Кількість:" + this.getAmount();
+		return "РќР°Р·РІР° С‚РѕРІР°СЂСѓ:" + this.getName() + " Р’РёСЂРѕР±РЅРёРє:" + this.getManufacturer() + " Р¦С–РЅР°:" + this.getPrice()
+				+ " РљС–Р»СЊРєС–СЃС‚СЊ:" + this.getAmount();
 
 	}
 
 	public void showItems(Hypermarket[] products) {
-		System.out.println("Список товарів наявних у магазині:");
+		System.out.println("РЎРїРёСЃРѕРє С‚РѕРІР°СЂС–РІ РґРѕСЃС‚СѓРїРЅРёС… Сѓ РјР°РіР°Р·РёРЅС–:");
 		for (int i = 0; i < Hypermarket.productsAmount; i++) {
-			System.out.println("Назва товару:" + products[i].getName() + " Виробник:" + products[i].getManufacturer()
-					+ " Ціна:" + products[i].getPrice() + " Кількість:" + products[i].getAmount());
+			System.out.println("РќР°Р·РІР°:" + products[i].getName() + " Р’РёСЂРѕР±РЅРёРє:" + products[i].getManufacturer()
+					+ " Р¦С–РЅР°:" + products[i].getPrice() + " РљС–Р»СЊРєС–СЃС‚СЊ:" + products[i].getAmount());
 
 		}
 
@@ -35,7 +35,7 @@ public class Hypermarket {
 
 		}
 		if (x == 0) {
-			System.out.println("У вас недостатньо коштів для того щоб придбати щось у нашому магазині.");
+			System.out.println("РЈ РІР°СЃ РЅРµРґРѕСЃС‚Р°С‚РЅСЊРѕ РєРѕС€С‚С–РІ С‰РѕР± С‰РѕСЃСЊ РїСЂРёРґР±Р°С‚Рё .");
 		}
 	}
 
@@ -50,7 +50,7 @@ public class Hypermarket {
 
 		}
 		if (x == 0) {
-			System.out.println("Нічого не знайдено");
+			System.out.println("РќС–С‡РѕРіРѕ РЅРµ Р·РЅР°Р№РґРµРЅРѕ");
 		}
 	}
 
@@ -64,7 +64,7 @@ public class Hypermarket {
 
 		}
 		if (x == 0) {
-			System.out.println("Нічого не знайдено");
+			System.out.println("РќС–С‡РѕРіРѕ РЅРµ Р·РЅР°Р№РґРµРЅРѕ");
 		}
 	}
 
@@ -78,7 +78,7 @@ public class Hypermarket {
 
 		}
 		if (x == 0) {
-			System.out.println("Нічого не знайдено");
+			System.out.println("РќС–С‡РѕРіРѕ РЅРµ Р·РЅР°Р№РґРµРЅРѕ");
 		}
 	}
 
@@ -92,7 +92,7 @@ public class Hypermarket {
 
 		}
 		if (x == 0) {
-			System.out.println("Нічого не знайдено");
+			System.out.println("РќС–С‡РѕРіРѕ РЅРµ Р·РЅР°Р№РґРµРЅРѕ");
 		}
 	}
 
