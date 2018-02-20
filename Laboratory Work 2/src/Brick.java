@@ -9,8 +9,8 @@ public class Brick extends BuildingMaterials {
 	}
 
 	public String toString() {
-		return "Назва товару:" + this.getName() + " Матеріал:" + this.getMaterial() + " Виробник:"
-				+ this.getManufacturer() + " Ціна:" + this.getPrice() + " Кількість:" + this.getAmount();
+		return "РќР°РІР·Р° С‚РѕРІР°СЂСѓ:" + this.getName() + " РњР°С‚РµСЂС–Р°Р»:" + this.getMaterial() + " Р’РёСЂРѕР±РЅРёРє:"
+				+ this.getManufacturer() + " Р¦С–РЅР°:" + this.getPrice() + " РљС–Р»СЊРєС–СЃС‚СЊ:" + this.getAmount();
 
 	}
 
