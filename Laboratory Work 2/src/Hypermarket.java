@@ -1,24 +1,25 @@
 
 public class Hypermarket {
 	static int productsAmount = 0;
-	private String manufacturer = "невідомо";
-	private String name = "без назви";
+	private String manufacturer = "unknown";
+	private String name = "no name";
 	private double price;
 	private int amount = 0;
-	private int itemsAmount;
 	private String type;
+	private String material;
 
 	public String toString() {
-		return "Назва товару:" + this.getName() + " Виробник:" + this.getManufacturer() + " Ціна:" + this.getPrice()
-				+ " Кількість:" + this.getAmount();
+		return "Product name:" + this.getName() +" Material:"+ this.getMaterial() +" Manufacturer:" + this.getManufacturer() + " Price:"
+				+ this.getPrice() + " Amount:" + this.getAmount();
 
 	}
 
 	public void showItems(Hypermarket[] products) {
-		System.out.println("Список товарів доступних у магазині:");
+		System.out.println("Goods list:");
 		for (int i = 0; i < Hypermarket.productsAmount; i++) {
-			System.out.println("Назва:" + products[i].getName() + " Виробник:" + products[i].getManufacturer()
-					+ " Ціна:" + products[i].getPrice() + " Кількість:" + products[i].getAmount());
+			System.out
+					.println("Product name:" + products[i].getName() + " Manufacturer:" + products[i].getManufacturer()
+							+ " Price:" + products[i].getPrice() + " Amount:" + products[i].getAmount());
 
 		}
 
@@ -35,22 +36,24 @@ public class Hypermarket {
 
 		}
 		if (x == 0) {
-			System.out.println("У вас недостатньо коштів щоб щось придбати .");
+			System.out.println("You do not have enough money to buy something.");
 		}
 	}
 
 	public void find(Hypermarket[] products, String key) {
 		int x = 0;
 		for (int i = 0; i < Hypermarket.productsAmount; i++) {
-			if (products[i].getClass().getName().toString() == key || products[i].getName() == key
-					|| products[i].getManufacturer() == key) {
+			if (products[i].getClass().getName().toString() == key 
+					|| (products[i].getName() == key)
+					|| (products[i].getManufacturer() == key)
+					|| (Materials.valueOf(key).toString() == products[i].getMaterial())) {
 				x++;
 				System.out.println(products[i].toString());
 			}
 
 		}
 		if (x == 0) {
-			System.out.println("Нічого не знайдено");
+			System.out.println("I didnt found nothing");
 		}
 	}
 
@@ -64,7 +67,7 @@ public class Hypermarket {
 
 		}
 		if (x == 0) {
-			System.out.println("Нічого не знайдено");
+			System.out.println("I didnt found nothing");
 		}
 	}
 
@@ -78,21 +81,22 @@ public class Hypermarket {
 
 		}
 		if (x == 0) {
-			System.out.println("Нічого не знайдено");
+			System.out.println("I didnt found nothing");
 		}
 	}
 
 	public void find(Hypermarket[] products, String key, int price) {
 		int x = 0;
 		for (int i = 0; i < Hypermarket.productsAmount; i++) {
-			if (products[i].getClass().getName().toString() == key && products[i].getPrice() > price) {
+			if (products[i].getClass().getName().toString() == key 
+					&& (products[i].getPrice() > price)) {
 				x++;
 				System.out.println(products[i].toString());
 			}
 
 		}
 		if (x == 0) {
-			System.out.println("Нічого не знайдено");
+			System.out.println("I didnt found nothing");
 		}
 	}
 
@@ -128,14 +132,6 @@ public class Hypermarket {
 		this.amount = amount;
 	}
 
-	public int getItemsAmount() {
-		return itemsAmount;
-	}
-
-	public void setItemsAmount(int itemsAmount) {
-		this.itemsAmount = itemsAmount;
-	}
-
 	public String getType() {
 		return type;
 	}
@@ -143,6 +139,14 @@ public class Hypermarket {
 	public void setType(String type) {
 		productsAmount += 1;
 		this.type = type;
+	}
+
+	public String getMaterial() {
+		return material;
+	}
+
+	public void setMaterial(String material) {
+		this.material = material;
 	}
 
 }
