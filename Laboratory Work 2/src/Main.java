@@ -5,30 +5,30 @@ public class Main {
 		Human sviatik = new Human("Sviatoslav", "Yatsynyk", 100);
 		Hypermarket arsen = new Hypermarket();
 		Hypermarket[] products = new Hypermarket[17];
-		products[0] = new Clue("Клей ПВА", "Китай", 1, 250);
-		products[1] = new Brick("Цегла", "Україна", "Глина", 4, 1000);
-		products[2] = new Glass("Скло прозоре", "Фінляндія", 500);
+		products[0] = new Clue("РљР»РµР№ РїРІР°", "РЎРёСЂС–СЏ", 1, 250);
+		products[1] = new Brick("Р¦РµРіР»Р°", "Р“РѕР»Р»Р°РЅРґС–СЏ", "Р“Р»РёРЅР°", 4, 1000);
+		products[2] = new Glass("РЎРєР»Рѕ", "РЈРєСЂР°С—РЅР°", 500);
 
-		products[3] = new Hammer("Молоток", "Стрий", 9.99, 100);
-		products[4] = new Nail("Цвяхи", 40, 1, 500);
-		products[5] = new Waterpass("Восервага", "Монголія", 100, 150, 50);
+		products[3] = new Hammer("РњРѕР»РѕС‚РѕРє", "Р¤С–РЅР»СЏРЅРґС–СЏ", 9.99, 100);
+		products[4] = new Nail("Р¦РІСЏС…Рё", 40, 1, 500);
+		products[5] = new Waterpass("Р’РѕСЃРµСЂРІР°РіР°", "Р¤С–РЅР»СЏРЅРґС–СЏ", 100, 150, 50);
 
-		products[6] = new Boards("Дошка", "дерево", 10, 10, 30, 2, 50);
-		products[7] = new Cladding("Облицювання", "черешня", "Німеччина", 50, 10);
-		products[8] = new Parquet("Паркет", "дуб", "Франція", 70, 5, 10, 1, 100);
+		products[6] = new Boards("Р”РѕС€РєР°", "РґРµСЂРµРІРѕ", 10, 10, 30, 2, 50);
+		products[7] = new Cladding("РџРѕРєСЂРёС‚С‚СЏ", "С‡РµСЂРµС€РЅСЏ", "РќС–РјРµС‡С‡РёРЅР°", 50, 10);
+		products[8] = new Parquet("РџР°СЂРєРµС‚", "РґСѓР±", "Р РёРј", 70, 5, 10, 1, 100);
 
-		products[9] = new Dye("Веселка", "Голандія", "червона", 25, 15);
-		products[10] = new Brush("Кисть", "Іспанія", 12, 40);
-		products[11] = new Varnish("Лак", "Ріо", "світлий", 17, 36);
+		products[9] = new Dye("Р¤Р°СЂР±Р°", "С‡РµСЂРІРѕРЅР°", "Р§РµСЂРІРѕРЅР°", 25, 15);
+		products[10] = new Brush("РљРёСЃС‚СЊ", "РЇРїРѕРЅС–СЏ", 12, 40);
+		products[11] = new Varnish("Р›Р°Рє", "РїСЂРѕР·РѕСЂРёР№", "РЎС‚СЂРёР№", 17, 36);
 
-		products[12] = new Bowl("Унітаз", "Польща", 2500, 10);
-		products[13] = new Washbasin("Умивальник", "Польща", 50, 100, 1500, 32);
-		products[14] = new Boiler("Бойлер", "Польща", 50, 100, 4000, 11);
-		products[15] = new Bowl("Технологічний унітаз", "Китай", 5000, 5);
-		products[16] = new Bowl("Cупер технологічний унітаз", "Японія", 25000, 2);
+		products[12] = new Bowl("РЈРЅС–С‚Р°Р·", "РџРѕР»СЊС‰Р°", 2500, 10);
+		products[13] = new Washbasin("РЈРјРёРІР°Р»СЊРЅРёРє", "РџРѕР»СЊС‰Р°", 50, 100, 1500, 32);
+		products[14] = new Boiler("Р‘РѕР№Р»РµСЂ", "РЎС‚СЂРёР№", 50, 100, 4000, 11);
+		products[15] = new Bowl("Р’РёСЃРѕРєРѕС‚РµС…РЅРѕР»РѕРіС–С‡РЅРёР№ СѓРЅС–С‚Р°Р·", "РљРёС‚Р°Р№", 5000, 5);
+		products[16] = new Bowl("РЎСѓРїРµСЂ РІРёСЃРѕРєРѕС‚РµС…РЅРѕР»РѕРіС–С‡РЅРёР№ СѓРЅС–С‚Р°Р·", "РЇРїРѕРЅС–СЏ", 25000, 2);
 		// arsen.showItems(products);
-		// arsen.find(products,"Лак");
-		  arsen.find(products, "Boards", 11);
+		// arsen.find(products,"РЎС‚СЂРёР№");
+		  arsen.find(products, "Bowl", 3000);
 		// arsen.whatCanIBuy(products, sviatik);
 
 	}
