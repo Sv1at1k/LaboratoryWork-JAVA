@@ -13,9 +13,9 @@ public class Boards extends WoodenProducts {
 	}
 
 	public String toString() {
-		return "Назва товару:" + this.getName() + " Матеріал:" + this.getMaterial() + " Виробник:"
-				+ this.getManufacturer() + " Ціна:" + this.getPrice() + " Товщина:" + this.getThicknes() + " Ширина:"
-				+ this.getWidth() + " Довжина" + this.getLength() + " Кількість:" + this.getAmount();
+		return "РќР°Р·РІР° С‚РѕРІР°СЂСѓ:" + this.getName() + " РњР°С‚РµСЂС–Р°Р»:" + this.getMaterial() + " Р’РёСЂРѕР±РЅРёРє:"
+				+ this.getManufacturer() + " Р¦С–РЅР°:" + this.getPrice() + " РўРѕРІС‰РёРЅР°:" + this.getThicknes() + " РЁРёСЂРёРЅР°:"
+				+ this.getWidth() + " Р”РѕРІР¶РёРЅР°" + this.getLength() + " РљС–Р»СЊРєС–СЃС‚СЊ:" + this.getAmount();
 
 	}
 }
