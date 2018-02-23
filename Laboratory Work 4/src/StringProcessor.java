@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class StringProcessor {
 	public String readInputText() {
@@ -11,7 +13,9 @@ public class StringProcessor {
 	}
 
 	public String processText(String inputText) {
-		String[] subStr;
+		
+		/** Using ENUM**/
+	/*	String[] subStr;
 		String finalStr = "";
 		subStr = inputText.split(" ");
 		for (int i = 0; i < subStr.length; i++) {
@@ -26,7 +30,14 @@ public class StringProcessor {
 
 				finalStr = finalStr + subStr[i] + " ";
 			}
-		}
+		} */
+		
+		/* Using  regular expresions  */
+		Pattern p = Pattern.compile("\\b(a|the|or|are|on|in|out)\\b",Pattern.CASE_INSENSITIVE);   
+		Matcher matcher = p.matcher(inputText);
+		String finalStr = matcher.replaceAll("");
+		
+		
 		return finalStr;
 	}
 
