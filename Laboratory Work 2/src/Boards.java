@@ -1,8 +1,7 @@
 
-public class Boards extends WoodenProducts {
-	public Boards(String name, String material, double price, double width, double length, double thicknes,
-			int amount) {
-		setName(name);
+ public class Boards extends WoodenProducts {
+    public Boards(final  String name, final String material, final double price, final double width, final double length, final double thicknes, final int amount) {
+        setName(name);
 		setMaterial(material);
 		setThicknes(thicknes);
 		setWidth(width);

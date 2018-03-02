@@ -6,7 +6,7 @@ public class Main {
 		Hypermarket arsen = new Hypermarket();
 		Hypermarket[] products = new Hypermarket[17];
 		products[0] = new Clue("clue PVA", "China", 1, 250); // name , country , price
-		products[1] = new Brick("brick", "Ukraine", "сlay", 4, 1000); // name , country, material, price, amount
+		products[1] = new Brick("brick", "Ukraine", "?lay", 4, 1000); // name , country, material, price, amount
 		products[2] = new Glass("transparent glass", "Finland", 500);
 
 		products[3] = new Hammer("hamer", "Stryy", 9.99, 100);
@@ -26,7 +26,7 @@ public class Main {
 		products[14] = new Boiler("boiler", "Poland", 50, 100, 4000, 11);
 		products[15] = new Bowl("Technological lavatory pan", "China", 5000, 5);
 		products[16] = new Bowl(" Super technological lavatory pan", "Japan", 25000, 2);
-		// arsen.showItems(products); // Показати усі товари
+		// arsen.showItems(products); // ???????? ?? ??????
 		 arsen.find(products,"OAK");  // search by parameter (any)
 		 // arsen.find(products, "Bowl", 3000 );  // search by name and price
 		// arsen.whatCanIBuy(products, sviatik); // goods that I can buy(depends on the amount of money)
