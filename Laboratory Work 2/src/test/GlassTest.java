@@ -1,6 +1,6 @@
 package test;
 
-import Lab_4.Glass;
+import main.Glass;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
@@ -10,7 +10,8 @@ public class GlassTest {
 @Test
     public void GlassTestConstructor (){
 
-  Glass glas =   new Glass("transparent glass", "Finland", 500);
+  Glass glas =   new Glass();
+  glas.setPrice(500.0);
  assertThat(glas.getPrice(),is(500.0));
 }
 }

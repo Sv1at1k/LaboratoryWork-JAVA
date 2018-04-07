@@ -1,6 +1,6 @@
 package test;
 
-import Lab_4.Human;
+import main.Human;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;

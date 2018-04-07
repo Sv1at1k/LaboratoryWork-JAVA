@@ -1,6 +1,6 @@
 package test;
 
-import Lab_4.Varnish;
+import main.Varnish;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
@@ -10,7 +10,8 @@ public class VarnishTest {
 @Test
     public void VarnishTestConstructor(){
 
-    Varnish varn = new Varnish("varn", "Rio", "light", 17, 36);
+    Varnish varn = new Varnish();
+    varn.setManufacturer("Rio");
     assertThat(varn.getManufacturer(),is("Rio"));
 
 }
