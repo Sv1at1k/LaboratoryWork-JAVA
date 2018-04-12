@@ -1,0 +1,11 @@
+labs\HypermarketManager.class
+labs\HypermarketService.class
+labs\Boards.class
+labs\Brick.class
+labs\Clue.class
+labs\Glass.class
+labs\Hammer.class
+labs\Main.class
+labs\config\JaxRsConfig.class
+labs\Good.class
+labs\CvsWritter.class
