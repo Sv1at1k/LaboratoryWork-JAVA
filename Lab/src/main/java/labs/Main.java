@@ -6,6 +6,7 @@ public class Main {
 {
     HypermarketManager hm = new HypermarketManager();
     hm.addGood(new Boards("Дошка","Виробник","Дерево", "213",2,3));
+
     hm.addGood(new Glass("Скло","Виробник","Пісок", "213",2,3));
     CvsWritter.write(path,hm.getGoods());
     CvsWritter.read(path);

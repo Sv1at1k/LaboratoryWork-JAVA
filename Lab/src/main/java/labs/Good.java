@@ -25,11 +25,11 @@ public class Good {
     }
 
     public String toCSV() {
-        return "Product name:" + this.getName() + ",Material:" + this.getMaterial() + ",Manufacturer:" + this.getManufacturer() + ",Price:"
-                + this.getPrice() + ",Amount:" + this.getAmount();
+        return this.getName() + "," + this.getMaterial() + "," + this.getManufacturer() + ","
+                + this.getPrice() + "," + this.getAmount();
     }
-    public static String getHeaders(){
-        return "Name:\n" + "Material:\n" + "Manufacturer:\n" + "Price:\n" + "Amount:\n";
+    public  String getHeaders(){
+        return "Name," + "Material," + "Manufacturer," + "Price," + "Amount,";
 
     }
 

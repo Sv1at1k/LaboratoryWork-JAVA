@@ -5,7 +5,7 @@
   <groupId>ua.lviv.iot</groupId>
   <artifactId>work</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
 
   <name>work</name>
   <url>http://maven.apache.org</url>

@@ -11,12 +11,11 @@ class CvsWritter {
 
     public static void write(final String path, final List<Good> goods) {
         try (FileWriter fw = new FileWriter(path, true);
-            BufferedWriter bw = new BufferedWriter(fw);
-            PrintWriter pw = new PrintWriter(bw)){
-
-            pw.print(Good.getHeaders()+"\n");
+             BufferedWriter bw = new BufferedWriter(fw);
+             PrintWriter pw = new PrintWriter(bw)) {
             for (Good good : goods) {
-                pw.println(good.toString()+ ";");
+                pw.print(good.getHeaders() + "\n");
+                pw.println(good.toCSV());
             }
             System.out.print("Writing done\n");
 
@@ -40,7 +39,7 @@ class CvsWritter {
         }
         String[] strArr = goods.split(";");
 
-        for(String x:strArr){
+        for (String x : strArr) {
             System.out.println(x);
 
         }

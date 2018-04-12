@@ -4,7 +4,7 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.HashMap;
 import java.util.Map;
-import javax.ws.rs.GET;
+import javax.ws. rs.GET;
 import javax.ws.rs.Path;
 
 @Path("/goods")
