@@ -28,7 +28,7 @@ public class HypermarketService {
         manager.addGood(board);
         return Response.status(200).entity("Good").build();
     }
-
+//very very samrt commnetn4twk'hdl;rfhg
     @PUT
     @Consumes(MediaType.APPLICATION_JSON)
     public Response replaceGood(Boards board) {
