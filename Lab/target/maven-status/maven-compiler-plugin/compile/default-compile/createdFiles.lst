@@ -1,0 +1,15 @@
+labs\Boards.class
+labs\Brick.class
+labs\Clue.class
+labs\Glass.class
+labs\persistence\dao\AbstractDao.class
+labs\Hammer.class
+labs\Main.class
+labs\config\JaxRsConfig.class
+labs\CvsWritter.class
+labs\HypermarketManager.class
+labs\HypermarketService.class
+labs\persistence\dao\IDao.class
+labs\persistence\dao\GoodDaoImpl.class
+labs\Good.class
+labs\persistence\dao\GoodDao.class
