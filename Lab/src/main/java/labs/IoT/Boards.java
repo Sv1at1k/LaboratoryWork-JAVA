@@ -1,0 +1,27 @@
+package labs.IoT;
+
+public class Boards extends Good {
+
+
+    public Boards() {
+    super();
+    }
+    public Boards(String type,String manufacturer,String name,String material,int amount,double price) {
+        super(type,manufacturer, name, material, amount,price);
+    }
+
+
+
+    @Override
+    public String toString() {
+        return  "ID:"+"Product name:" + this.getName() + " Material:" + this.getMaterial() + " Manufacturer:" + this.getManufacturer() + " Price:"
+                + this.getPrice() + " Amount:" + this.getAmount();
+    }
+
+
+    @Override
+    public String getHeaders() {
+        return super.getHeaders() + "id";
+    }
+}
+

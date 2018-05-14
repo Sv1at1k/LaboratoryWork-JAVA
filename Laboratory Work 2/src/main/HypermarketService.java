@@ -10,7 +10,7 @@ import javax.ws.rs.Path;
 @Path("/goods")
 public class HypermarketService {
 
-    private static Map<Integer, Boards> boards = new HashMap<>();
+    Dao
 
     @GET
     @Path("/{id}")
